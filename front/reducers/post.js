@@ -14,7 +14,7 @@ export const initialState = {
         },
         {
           src:
-            "https://lh3.googleusercontent.com/proxy/_wqjZdFe97qFpvWnvI6M72UZERJjBfLx80mIZ-alZM7e492Lc-elP-JVQZa3j5JfxHKK46GVT_oRiCNKmC4V6nxBPNp_zaSAPTKcePq_zWo3UnCNCVBosQlGKoz2R1Q7uWYDvrM",
+            "https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
         },
         {
           src:
@@ -41,11 +41,11 @@ export const initialState = {
   postAdded: false,
 };
 
-const ADD_POST = 'ADD_POST';
+const ADD_POST = "ADD_POST";
 
 export const addPost = {
   type: ADD_POST,
-}
+};
 
 const dummyPost = {
   id: 2,
@@ -65,7 +65,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         mainPosts: [dummyPost, ...state.mainPosts],
         postAdded: true,
-      }
+      };
     default:
       return state;
   }
